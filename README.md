@@ -8,6 +8,23 @@ This project focuses on analyzing housing markets in various cities and states, 
 
 This project was chosen because the housing market offers a rich dataset with meaningful insights into the economic and socio-cultural dynamics of different regions. Understanding these factors can help stakeholders—ranging from potential homebuyers to investors—make informed decisions. Through this project, we aim to answer key questions around housing affordability, trends, and regional market comparisons.
 
+## ETL Workflow
+This project follows an **Extract, Transform, Load (ETL)** workflow, where:
+- **Extract**: The latest housing market dataset is downloaded from Kaggle.
+- **Transform**: The dataset is cleaned by removing missing values and duplicates, and date formats are converted.
+- **Load**: The cleaned data is stored in two formats:
+  - CSV file for further analysis and reporting.
+  - MongoDB database for structured storage and querying.
+
+<p align="center">
+  <img src="Housing Market_ETL Workflow.png" alt="ETL Workflow" width="600">
+</p>
+
+
+## Why MongoDB?
+
+MongoDB was chosen for its flexibility in handling semi-structured data, making it ideal for managing diverse housing market datasets. Additionally, MongoDB’s document-based structure allows for seamless exporting of collections into JSON format, which is great for integrating with a Flask-based web application. This enables efficient API development, real-time data retrieval, and a scalable backend for our housing market insights platform.
+
 ## Instructions
 
 1. Clone this repository to your local machine:
